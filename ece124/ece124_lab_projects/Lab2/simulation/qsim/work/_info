@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/tcai/Downloads/ece124/ece124_lab_projects/Lab2/simulation/qsim
+vLogicalStep_Lab2_top
+Z0 !s110 1675288052
+!i10b 1
+!s100 mUc]K3k135^E<5k^j^aW;2
+I@Mm5@5Y9l5jhPA:S@5R9b3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/tcai/Downloads/Lab2/simulation/qsim
+w1675288051
+8LogicalStep_Lab2_top.vo
+FLogicalStep_Lab2_top.vo
+L0 32
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1675288052.000000
+!s107 LogicalStep_Lab2_top.vo|
+!s90 -work|work|LogicalStep_Lab2_top.vo|
+!i113 1
+Z5 o-work work
+n@logical@step_@lab2_top
+vLogicalStep_Lab2_top_vlg_vec_tst
+R0
+!i10b 1
+!s100 9`7m_GfcOLO9:hECkV5_j2
+I_cY]@?SZlTPiPW0@IZId20
+R1
+R2
+w1675288048
+8report_Waveform.vwf.vt
+Freport_Waveform.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 report_Waveform.vwf.vt|
+!s90 -work|work|report_Waveform.vwf.vt|
+!i113 1
+R5
+n@logical@step_@lab2_top_vlg_vec_tst

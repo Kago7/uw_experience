@@ -1,0 +1,75 @@
+|LogicalStep_Lab1_top
+leds[0] <= schem_gates_activeLow:inst3.OUT1
+leds[1] <= schem_gates_activeLow:inst3.OUT2
+leds[2] <= schem_gates_activeLow:inst3.OUT3
+leds[3] <= schem_gates_activeLow:inst3.OUT4
+leds[4] <= VHDL_polarity_controller:inst2.OUT1
+leds[5] <= VHDL_polarity_controller:inst2.OUT2
+leds[6] <= VHDL_polarity_controller:inst2.OUT3
+leds[7] <= VHDL_polarity_controller:inst2.OUT4
+PB[0] => inst5.IN0
+PB[1] => inst4.IN0
+sw[1] => VHDL_polarity_controller:inst2.POLARITY_CONTROL
+sw[1] => schem_gates_activeLow:inst3.POLARITY_CONTROL
+
+
+|LogicalStep_Lab1_top|VHDL_polarity_controller:inst2
+IN1 => OUT1.IN0
+IN2 => OUT2.IN0
+IN3 => OUT3.IN0
+IN4 => OUT4.IN0
+POLARITY_CONTROL => OUT1.IN1
+POLARITY_CONTROL => OUT2.IN1
+POLARITY_CONTROL => OUT3.IN1
+POLARITY_CONTROL => OUT4.IN1
+OUT1 <= OUT1.DB_MAX_OUTPUT_PORT_TYPE
+OUT2 <= OUT2.DB_MAX_OUTPUT_PORT_TYPE
+OUT3 <= OUT3.DB_MAX_OUTPUT_PORT_TYPE
+OUT4 <= OUT4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LogicalStep_Lab1_top|VHDL_gates:inst1
+AND_IN1 => AND_OUT.IN0
+AND_IN2 => AND_OUT.IN1
+NAND_IN1 => NAND_OUT.IN0
+NAND_IN2 => NAND_OUT.IN1
+OR_IN1 => OR_OUT.IN0
+OR_IN2 => OR_OUT.IN1
+XOR_IN1 => XOR_OUT.IN0
+XOR_IN2 => XOR_OUT.IN1
+AND_OUT <= AND_OUT.DB_MAX_OUTPUT_PORT_TYPE
+NAND_OUT <= NAND_OUT.DB_MAX_OUTPUT_PORT_TYPE
+OR_OUT <= OR_OUT.DB_MAX_OUTPUT_PORT_TYPE
+XOR_OUT <= XOR_OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LogicalStep_Lab1_top|schem_gates_activeLow:inst3
+OUT1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+IN_1 => inst.IN0
+POLARITY_CONTROL => inst.IN1
+POLARITY_CONTROL => inst4.IN1
+POLARITY_CONTROL => inst5.IN1
+POLARITY_CONTROL => inst6.IN1
+OUT2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+IN_2 => inst4.IN0
+OUT3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+IN_3 => inst5.IN0
+OUT4 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+IN_4 => inst6.IN0
+
+
+|LogicalStep_Lab1_top|schem_gates:inst
+AND_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+AND_IN1 => inst.IN0
+AND_IN2 => inst.IN1
+NAND_OUT <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+NAND_IN2 => inst5.IN0
+NAND_IN1 => inst5.IN1
+OR_OUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+OR_IN2 => inst1.IN0
+OR_IN1 => inst1.IN1
+XOR_OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+XOR_IN1 => inst4.IN0
+XOR_IN2 => inst4.IN1
+
+
