@@ -1,3 +1,5 @@
+--Group Members: Tony Cai, Karl Gonsalves
+
 --*****************************************************************************
 --*  Copyright (C) 2016 by Trevor Smouter
 --*
